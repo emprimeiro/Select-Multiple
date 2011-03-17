@@ -1,0 +1,14 @@
+body{
+	font-family: Arial;
+}
+
+#content{
+	margin:auto;
+	width:800px;
+}
+
+#form-example > label{
+	font-weight:bold;
+	display:inline-block;
+	line-height:35px;
+}

@@ -1,0 +1,124 @@
+.select-multiple{
+    width: 120px;
+    height: 27px;
+    line-height: 27px;
+    border:1px solid #ccc;
+    display:inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    margin: 2px 0;
+    border-radius:5px;
+    padding: 0 14px 0 2px;
+    overflow: hidden;
+    background: transparent url('images/select-multiple/triangle.png') no-repeat right center;
+}
+
+.select-multiple:hover{
+    border:1px solid #F3C400;
+}
+
+#select-multiple-container{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius:8px;
+    background: #ccc;
+    padding:  1px 1px 30px;
+    background: #3265b1;
+}
+
+.select-multiple-title{
+    font-weight: 300;
+    font-size: 16px;
+    display: block;
+    padding: 4px 8px;
+    border-radius:8px 8px 0 0;
+    color:#fff;
+}
+
+#select-multiple-content{
+    background: #fff;
+    min-height: 100px;
+    border-radius:4px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.select-multiple-column{
+    width: 195px;
+    float:left;
+    padding: 8px 0 8px 5px;
+}
+
+#select-multiple-content input{
+    margin: 0 5px 0 0;
+}
+
+.select-multiple-clear{
+    clear:both;
+}
+
+#select-multiple-buttons-left,
+#select-multiple-buttons-right{
+    position: absolute;
+    right:5px;
+    bottom:5px;
+}
+
+#select-multiple-buttons-left{
+    left:5px;
+}
+
+#select-multiple-buttons-left a,
+#select-multiple-buttons-right a{
+    display: inline-block;
+    color: #000;
+    margin: 0 0 0 5px;
+    text-decoration: none;
+    background: transparent url('images/select-multiple/button.jpg') repeat-x;
+    border-radius:3px;
+    padding: 2px 8px;
+    font-size: 13px;
+}
+
+#select-multiple-buttons-left a{
+    margin: 0 5px 0 0;
+}
+
+#select-multiple-buttons-left a:hover,
+#select-multiple-buttons-right a:hover{
+    text-decoration: none;
+    background-position: 0 -22px;
+}
+
+#select-multiple-container input[type=checkbox],
+#select-multiple-container input[type=radio]{
+    display: block;
+    float: left;
+    clear:both;
+}
+
+#select-multiple-container input[type=checkbox] + label,
+#select-multiple-container input[type=radio]+ label{
+    display: block;
+    float: left;
+    width: 170px;
+    margin: 0 0 10px;
+    font-weight: normal;
+    cursor:pointer;
+}
+
+#select-multiple-container input[type=checkbox]:checked + label,
+#select-multiple-container input[type=radio]:checked + label{
+    font-weight: bold;
+}
+
+.select-multiple-optgroup{
+    font-weight: bold;
+    display: inline-block;
+    clear:both;
+    float:left;
+    font-size: 16px;
+    margin-bottom: 5px;
+}

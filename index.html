@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+<title>Select Multiple Example</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="src/jquery.select.multiple.css" /> 
+<link rel="stylesheet" type="text/css" media="screen" href="example.css" /> 
+
+</head>
+<body>
+
+<div id="content">
+
+	<h1>Select Multiple Example</h1>
+	
+	<form id="form-example">
+	
+		<label>Example 1 (Default):</label>
+		<select name="example-1">
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+			<option value="5">Value 5</option>
+		</select>
+		
+		<br/><br/>
+		
+		<label>Example 2 (Multiple):</label>
+		<select name="example-2" multiple="multiple">
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+			<option value="5">Value 5</option>
+		</select>
+		
+		<br/><br/>
+				
+		<label>Example 3 (i18n):</label>
+		<select name="example-3" multiple="multiple">
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+			<option value="5">Value 5</option>
+		</select>
+		
+		<br/><br/>
+		
+		<label>Example 4 (With OptGroup):</label>
+		<select name="example-4" multiple="multiple">
+			<optgroup label="Group 1">
+				<option value="1">Value 1</option>
+				<option value="2">Value 2</option>
+			</optgroup>
+			<optgroup label="Group 2">
+				<option value="3">Value 3</option>
+				<option value="4">Value 4</option>
+				<option value="5">Value 5</option>
+			</optgroup>
+		</select>
+		
+		<br/><br/>
+				
+		<label>Example 5 (With OptGroup - Without the check):</label>
+		<select name="example-5" multiple="multiple">
+			<optgroup label="Group 1">
+				<option value="1">Value 1</option>
+				<option value="2">Value 2</option>
+			</optgroup>
+			<optgroup label="Group 2">
+				<option value="3">Value 3</option>
+				<option value="4">Value 4</option>
+				<option value="5">Value 5</option>
+			</optgroup>
+		</select>
+		
+		<br/><br/>
+		
+		
+		<label>Example 6 (With OptGroup - Without the select all button):</label>
+		<select name="example-6" multiple="multiple">
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+			<option value="5">Value 5</option>
+		</select>
+		
+		<br/><br/>
+		
+		
+		<label>Example 7 (With width):</label>
+		<select name="example-7">
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+			<option value="4">Value 4</option>
+			<option value="5">Value 5</option>
+		</select>
+		
+		<br/><br/>
+				
+	</form>	
+</div>
+<script type="text/javascript" src="src/jquery.select.multiple.js"></script>
+<script type="text/javascript">
+
+		$('[name="example-1"]').selectMultiple();
+	
+		$('[name="example-2"]').selectMultiple();
+		
+		$('[name="example-3"]').selectMultiple({
+			'string_ok' : 'ok',
+            'string_cancel' : 'cancel',
+            'string_select_all' : 'check all',
+            'string_deselect_all' : 'uncheck all'
+		});
+		
+		$('[name="example-4"]').selectMultiple();
+		
+		$('[name="example-5"]').selectMultiple({
+			'optgroup_selectable' : false,
+		});
+		
+		$('[name="example-6"]').selectMultiple({
+			'select_all' : false,
+		});
+		
+		
+		$('[name="example-7"]').selectMultiple({
+			'width' : 250,
+		});
+		
+</script>
+</body>
+</html>
